@@ -35,3 +35,5 @@ yarn dev
 Open [LocalHost 3000 port](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+
+API Key can be obtained by creating a free account on [TMDB](https://www.themoviedb.org/). Create a new account, Move to settings, Click API and fill the form for developer options. Copy the API key into .env file. TMDB API base is 'https://api.themoviedb.org/3'.
