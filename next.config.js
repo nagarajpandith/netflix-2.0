@@ -6,6 +6,7 @@ module.exports = {
       "cdn.worldvectorlogo.com",
       "upload.wikimedia.org",
       "lh3.googleusercontent.com",
+      "www.w3schools.com",
     ],
   },
 };

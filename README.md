@@ -12,9 +12,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - Deployed on [Vercel](https://vercel.com/)
 
 ## To-Dos
-- [ ] Netflix Home & Sign-in Page 
-- [ ] Fix sign-in callback errors
-- [ ] Sign-in using GitHub/Google provider [Next-auth]
+- [x] Netflix Home & Sign-in Page 
+- [x] Fix sign-in callback errors
+- [x] Sign-in using GitHub/Google provider [Next-auth]
 
 ## Running the Project
 
