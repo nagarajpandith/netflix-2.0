@@ -38,7 +38,11 @@ function Header() {
         <BsCollectionPlay className="text-white text-2xl" />
       </div>
       <div className="w-[30px] h-[30px] rounded-full overflow-hidden" onClick={()=>setLoginShow(true)} >
-        <Image width={50} height={50} src="https://www.w3schools.com/howto/img_avatar.png" />
+        {session ? 
+          <Image width={50} height={50} src={session.user.image}/>
+        :
+          <Image width={50} height={50} src="https://www.w3schools.com/howto/img_avatar.png" />
+        }
       </div>
       <div className={`absolute top-[50px] right-[20px] ${loginShow ? "flex" : "hidden"} p-[15px] bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg`}>
         {!session ? 
@@ -48,7 +52,7 @@ function Header() {
         </div>
         : 
         <div className="flex w-full flex-col">
-          <div className="flex flex-col"><span className="text-base font-bold">{session.user.username}</span><span className="text-sm font-thin">{session.user.email}</span></div>
+          <div className="flex flex-col"><span className="text-base font-bold">{session.user.name}</span><span className="text-sm font-thin">{session.user.email}</span></div>
           <button className="w-full bg-red-600 p-[5px] rounded-md mt-[5px]" onClick={()=>signOut()}>Log Out</button>
         </div>
         }
